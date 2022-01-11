@@ -5,7 +5,8 @@ const secondaryColor = "#34495e";
 const lightColor = "#ecf0f1";
 
 export const App = styled.div`
-  text-align: center;
+  background-color: ${primaryColor};
+  color: white;
 
   .App-logo {
     height: 40vmin;
@@ -13,18 +14,40 @@ export const App = styled.div`
   }
 
   .App-header {
-    background-color: ${primaryColor};
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+  }
+
+  .primary-text {
+    font-size: 5rem;
+  }
+
+  .center-header {
+    text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  }
+
+  .left-header {
+    margin: 0 1vw;
+  }
+
+  .right-header {
+    margin: 0 1vw;
   }
 
   q {
     font-size: 1.3rem;
+  }
+
+  li {
+    font-size: 1rem;
+    list-style: none;
   }
 `;
 
