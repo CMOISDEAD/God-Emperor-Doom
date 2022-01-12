@@ -4,8 +4,11 @@ const primaryColor = "#2c3e50";
 const secondaryColor = "#34495e";
 const lightColor = "#ecf0f1";
 
+const backgroundImage = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvg%2Fwallhaven-vglx93.png&f=1&nofb=1";
+
 export const App = styled.div`
-  background-color: ${primaryColor};
+  background: url(${backgroundImage}) center center fixed;
+  background-size: cover;
   color: white;
 
   .App-logo {
@@ -16,9 +19,9 @@ export const App = styled.div`
   .App-header {
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: calc(10px + 2vmin);
   }
 
@@ -33,38 +36,4 @@ export const App = styled.div`
     justify-content: center;
   }
 
-  .left-header {
-    margin: 0 1vw;
-  }
-
-  .right-header {
-    margin: 0 1vw;
-  }
-
-  q {
-    font-size: 1.3rem;
-  }
-
-  li {
-    font-size: 1rem;
-    list-style: none;
-  }
-`;
-
-export const Button = styled.button`
-  background-color: ${secondaryColor};
-  border: 1px solid ${lightColor};
-  color: ${lightColor};
-  margin: 0 4vw;
-
-  :hover {
-    color: ${primaryColor};
-    background-color: ${lightColor};
-    border: 1px solid ${secondaryColor};
-  }
-`;
-
-export const ButtonGroup = styled.div`
-  display: flex;
-  justify-content: space-between;
 `;
