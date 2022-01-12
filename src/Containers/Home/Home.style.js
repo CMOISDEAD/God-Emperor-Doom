@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const primaryColor = "#2c3e50";
-const secondaryColor = "#34495e";
-const lightColor = "#ecf0f1";
+// const primaryColor = "#2c3e50";
+// const secondaryColor = "#34495e";
+// const lightColor = "#ecf0f1";
 
 const backgroundImage = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvg%2Fwallhaven-vglx93.png&f=1&nofb=1";
 
