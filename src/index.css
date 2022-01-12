@@ -8,8 +8,8 @@
 
 /* Media */
 @media only screen and (max-width: 600px) {
-  .navbar-brand {
-    text-align: center;
+  .navbar {
+    text-align: center !important;
   }
 }
 
