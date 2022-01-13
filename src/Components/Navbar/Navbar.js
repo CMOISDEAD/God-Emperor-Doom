@@ -7,19 +7,19 @@ export const Navbar = () => {
         DDX
       </Brand>
       <Social>
-        <a href="#">
+        <a href="google.com">
           <i className="bi bi-twitter">
             <span> twitter</span>
           </i>
           <br />
         </a>
-        <a href="#">
+        <a href="google.com">
           <i className="bi bi-twitch">
             <span> Twitch</span>
           </i>
           <br />
         </a>
-        <a href="#">
+        <a href="google.com">
           <i className="bi bi-facebook">
             <span> Facebook</span>
           </i>
