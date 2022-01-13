@@ -4,7 +4,8 @@ import styled from "styled-components";
 // const secondaryColor = "#34495e";
 // const lightColor = "#ecf0f1";
 
-const backgroundImage = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvg%2Fwallhaven-vglx93.png&f=1&nofb=1";
+const backgroundImage =
+  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvg%2Fwallhaven-vglx93.png&f=1&nofb=1";
 
 export const App = styled.div`
   background: url(${backgroundImage}) center center fixed;
@@ -23,6 +24,7 @@ export const App = styled.div`
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+    margin-bottom: -4.2vh;
   }
 
   .primary-text {
@@ -36,4 +38,26 @@ export const App = styled.div`
     justify-content: center;
   }
 
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .sketch{
+      font-size: 1.4rem;
+      animation: arrow 1s infinite;
+    }
+  }
+
+  @keyframe arrow {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(10vh);
+    }
+    100%{
+      transform: translateY(30vh);
+    }
+  }
 `;

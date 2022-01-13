@@ -7,9 +7,9 @@
 }
 
 /* Media */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .navbar {
-    text-align: center !important;
+    margin: 0 24vw !important;
   }
 }
 
@@ -31,6 +31,10 @@ code {
 @font-face {
   font-family: sketch;
   src: url(./Assets/Chomsky.woff);
+}
+
+.sketch {
+  font-family: sketch, san-serif !important;
 }
 
 .asiatic {

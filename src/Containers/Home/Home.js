@@ -1,5 +1,6 @@
-import { App } from "./Home.style";
+import TypeIt from "typeit-react";
 
+import { App } from "./Home.style";
 import { Navbar } from "../../Components/Navbar/Navbar";
 
 function Home() {
@@ -8,9 +9,20 @@ function Home() {
       <App>
         <Navbar />
         <header className="App-header">
-          <h3>DEVELOPER MAN X</h3>
-          <p className="fs-6">Site on Process...</p>
+          <TypeIt className="text-center">
+            Frontend Developer. <br />
+            whit 3+ years of experience. <br />
+            Now Aviable for you.
+          </TypeIt>
         </header>
+        <footer>
+          <div className="sketch ps-3">
+            Scroll down 
+          </div>
+          <div className="sketch pe-3">
+             Scroll down
+          </div>
+        </footer>
       </App>
     </>
   );

@@ -1,11 +1,31 @@
-import { Brand, Nav } from "./Navbar.style";
+import { Brand, Nav, Social } from "./Navbar.style";
 
 export const Navbar = () => {
   return (
-    <Nav classNameName="navbar">
+    <Nav className="navbar">
       <Brand className="navbar-brand" href="#">
         DDX
       </Brand>
+      <Social>
+        <a href="#">
+          <i className="bi bi-twitter">
+            <span> twitter</span>
+          </i>
+          <br />
+        </a>
+        <a href="#">
+          <i className="bi bi-twitch">
+            <span> Twitch</span>
+          </i>
+          <br />
+        </a>
+        <a href="#">
+          <i className="bi bi-facebook">
+            <span> Facebook</span>
+          </i>
+          <br />
+        </a>
+      </Social>
     </Nav>
   );
 };
