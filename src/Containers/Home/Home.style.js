@@ -38,26 +38,45 @@ export const App = styled.div`
     justify-content: center;
   }
 
+  .main-text {
+    font-size: calc(10px + 3vmin);
+    .fullstack{
+      // animation: glow 1s linear infinite alternate;
+    }
+  }
+
   footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    .sketch{
+
+    .sketch {
       font-size: 1.4rem;
-      animation: arrow 1s infinite;
+      animation: arrow 1s linear infinite;
     }
   }
 
-  @keyframe arrow {
-    0%{
+  @keyframes arrow {
+    0% {
       transform: translateY(0);
     }
-    50%{
-      transform: translateY(10vh);
+    50% {
+      transform: translateY(-1vh);
     }
-    100%{
-      transform: translateY(30vh);
+    100% {
+      transform: translateY(0vh);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
 `;
