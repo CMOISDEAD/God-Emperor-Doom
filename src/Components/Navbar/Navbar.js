@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <Nav className="navbar">
       <Brand className="navbar-brand" href="#">
-        DDX
+        DD<span className="sketch">X</span>
       </Brand>
       <Social>
         <a href="google.com">
