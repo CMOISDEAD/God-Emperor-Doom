@@ -6,12 +6,20 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/* Media */
+/* Media {begin} */
 @media (max-width: 600px) {
   .navbar {
     margin: 0 24.5vw !important;
   }
+  .aside {
+    display: none;
+  }
+  .first-aside {
+    display: block;
+    writing-mode: horizontal-tb !important;
+  }
 }
+/* Media {end} */
 
 body {
   background: #2c3e50;
