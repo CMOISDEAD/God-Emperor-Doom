@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-// const primaryColor = "#2c3e50";
-// const secondaryColor = "#34495e";
-// const lightColor = "#ecf0f1";
+import { SynthWave } from "../../Components/Colors/Colors";
 
 const backgroundImage =
   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvg%2Fwallhaven-vglx93.png&f=1&nofb=1";
@@ -10,7 +7,7 @@ const backgroundImage =
 export const App = styled.div`
   background: url(${backgroundImage}) center center fixed;
   background-size: cover;
-  color: white;
+  color: ${SynthWave.foreground};
 
   .App-logo {
     height: 40vmin;
@@ -40,7 +37,7 @@ export const App = styled.div`
 
   .main-text {
     font-size: calc(10px + 3vmin);
-    .fullstack{
+    .fullstack {
       // animation: glow 1s linear infinite alternate;
     }
   }
@@ -71,12 +68,16 @@ export const App = styled.div`
 
   @keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      text-shadow: 0 0 10px ${SynthWave.foreground},
+        0 0 20px ${SynthWave.foreground}, 0 0 30px ${SynthWave.red},
+        0 0 40px ${SynthWave.red}, 0 0 50px ${SynthWave.red},
+        0 0 60px ${SynthWave.red}, 0 0 70px ${SynthWave.red};
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      text-shadow: 0 0 20px ${SynthWave.foreground}, 0 0 30px ${SynthWave.pink},
+        0 0 40px ${SynthWave.pink}, 0 0 50px ${SynthWave.pink},
+        0 0 60px ${SynthWave.pink}, 0 0 70px ${SynthWave.pink},
+        0 0 80px ${SynthWave.pink};
     }
   }
 `;

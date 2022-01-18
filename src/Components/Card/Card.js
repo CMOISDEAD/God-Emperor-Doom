@@ -5,9 +5,11 @@ export const Card = ({ title, background, letter, year, description }) => {
     <>
       <Main background={background}>
         <Letter className="sketch">{letter}</Letter>
-        <div className="date">{year}</div>
-        <div className="footer">{title}</div>
-        <div className="description">{description}</div>
+        <div className="text-center">
+          <div className="date">{year}</div>
+          <div className="footer">{title}</div>
+          <div className="description">{description}</div>
+        </div>
       </Main>
     </>
   );

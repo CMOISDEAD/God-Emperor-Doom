@@ -1,11 +1,11 @@
 import { Icons } from "../../Components/Icons/Icons";
 
-import { Picture, IconList } from "./About.style";
+import { AboutBox, Picture, IconList } from "./About.style";
 
 export const About = () => {
   return (
     <>
-      <div className="container text-center mt-3 mb-3 pt-2">
+      <AboutBox className="container text-center mt-3 mb-3 pt-2">
         <h3 className="fs-2">About Me.</h3>
         <div className="row">
           <div className="col-md-7 col-sm-auto">
@@ -46,9 +46,6 @@ export const About = () => {
                   <Icons icon="fab fa-github-alt" name="github" />
                 </li>
                 <li>
-                  <Icons icon="fas fa-terminal" name="terminal" />
-                </li>
-                <li>
                   <Icons icon="fab fa-linux" name="linux" />
                 </li>
                 <li>
@@ -78,7 +75,7 @@ export const About = () => {
             Profile Pic.
           </Picture>
         </div>
-      </div>
+      </AboutBox>
     </>
   );
 };

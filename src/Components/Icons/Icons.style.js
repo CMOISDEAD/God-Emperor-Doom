@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
 export const I = styled.i`
-  font-size: 1.8rem;
-  margin: 0 1vw 10px 1vw;
+  font-size: 1.5rem;
+  text-weight: normal !important;
+  margin: 0 1vw 1vh 1vw;
+
   .lang-info {
-    display: none;
-    transition: all 0.5s ease;
+    font-size: 1rem;
     margin: 0;
+    visibility: hidden;
   }
-  :hover > * {
-    display: block;
-    position: absolute;
-  }
+
   :hover {
-    color: black;
-  }
-  .sign:hover,
-  .lang-info {
-    color: black;
+    .lang-info {
+      visibility: visible;
+    }
   }
 `;

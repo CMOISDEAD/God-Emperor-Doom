@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SynthWave } from "../../Components/Colors/Colors";
 
 export const Nav = styled.nav`
   display: flex;
@@ -14,15 +15,14 @@ export const Brand = styled.div`
   font-family: sketch, san-serif !important;
   font-size: 5rem;
   span {
-    animation: rainbow 0.2s linear infinite;
   }
 `;
 
 export const Social = styled.div`
-  color: white; 
+  color: ${SynthWave.foreground}; 
 
   a {
-    color: white;
+    color: ${SynthWave.foreground};
     transition: all .5s;
     text-decoration: none;
 
@@ -40,21 +40,21 @@ export const Social = styled.div`
     }
 
     :hover{
-      color: #fff8f3;
+      color: ${SynthWave.foreground};
     }
 
     @keyframes rainbow{
       25%{
-        color: #ec8d75;
+        color: ${SynthWave.pink};
       }
       50%{
-        color: #244584;
+        color: ${SynthWave.blue};
       }
       75%{
-        color: #9e2281;
+        color: ${SynthWave.red};
       }
       100%{
-      color: #96e6c2;
+      color: ${SynthWave.cyan};
       }
   }
 `;

@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { SynthWave } from "../../Components/Colors/Colors";
 
 export const Main = styled.div`
   perspective: 1000px;
-  background: white;
-  color: black;
+  background: ${SynthWave.foreground};
+  color: ${SynthWave.background};
   padding: 0.5rem 6rem;
-  border: 1px solid black;
+  border: 1px solid ${SynthWave.background};
   margin: 1rem 0;
   width: auto;
   height: 60vh;
@@ -13,36 +14,15 @@ export const Main = styled.div`
 
   :hover {
     transition: all 0.5s ease-out;
-    position: absolute;
-    width: 80vw;
-    z-index: 10;
-    background: #1b1e23;
-    color: #f6eddb;
-    border: 1px solid #9e2281;
+    background: ${SynthWave.background};
+    color: ${SynthWave.foreground};
 
-    box-shadow: 0 0 10px #40265c;
-
-    .sketch {
-      background: url(${(props) => props.background}) center center;
-      background-position: cover;
-    }
-
-    .description {
-      display: block;
-    }
-
-    .date {
-      color: #bd4b64;
-    }
-
-    .footer {
-      color: #ec8d75;
-    }
+    box-shadow: 0 0 10px ${SynthWave.purple};
   }
 
   .description {
     display: none;
-    color: #f6eddb;
+    color: ${SynthWave.foreground};
   }
 `;
 
