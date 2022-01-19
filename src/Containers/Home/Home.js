@@ -19,7 +19,7 @@ function Home() {
               Full-Stack Developer.
             </span>{" "}
             <br />
-            with 3+ years of experience. <br />
+            With 3+ years of experience. <br />
             Now Aviable for you.
           </TypeIt>
         </header>
