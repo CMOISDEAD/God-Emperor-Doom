@@ -8,21 +8,21 @@ export const Contact = () => {
       <CardBox>
         <Side className="sketch aside first-aside">Click One</Side>
         <Card
-          title="Lorem."
+          title="LinkedIn"
           background="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5579402.jpg&f=1&nofb=1"
           year="2020"
           letter="D"
           description="Lorem Ipsum Dolorum."
         />
         <Card
-          title="Ipsum."
+          title="Instagram"
           background="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5579402.jpg&f=1&nofb=1"
           year="2021"
           letter="D"
           description="Lorem Ipsum Dolorum."
         />
         <Card
-          title="Dolorum."
+          title="Twitter"
           background="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5579402.jpg&f=1&nofb=1"
           year="2022"
           letter="X"
