@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import { SynthWave } from "../../Components/Colors/Colors";
+import { device } from "../../utils/breakpoints";
 
 const backgroundImage =
   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvg%2Fwallhaven-vglx93.png&f=1&nofb=1";
 
 export const App = styled.div`
+  @media ${device.mobileM} {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   background: url(${backgroundImage}) center center fixed;
   background-size: cover;
   color: ${SynthWave.foreground};
@@ -17,9 +23,9 @@ export const App = styled.div`
   .App-header {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: calc(10px + 2vmin);
     margin-bottom: -4.2vh;
   }
@@ -79,5 +85,17 @@ export const App = styled.div`
         0 0 60px ${SynthWave.pink}, 0 0 70px ${SynthWave.pink},
         0 0 80px ${SynthWave.pink};
     }
+  }
+`;
+
+export const Img = styled.img`
+  width: 50vw;
+
+  @media ${device.mobileM} {
+    display: none;
+  }
+
+  @media ${device.laptop} {
+    display: block;
   }
 `;

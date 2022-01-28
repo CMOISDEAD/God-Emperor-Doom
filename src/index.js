@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import Home from "./Containers/Home/Home";
 import reportWebVitals from "./reportWebVitals";
 

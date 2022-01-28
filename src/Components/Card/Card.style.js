@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { SynthWave } from "../../Components/Colors/Colors";
 
+export const A = styled.a`
+  text-decoration: none;
+`;
+
 export const Main = styled.div`
   perspective: 1000px;
-  background: ${SynthWave.foreground};
-  color: ${SynthWave.background};
+  background: ${SynthWave.background};
+  color: ${SynthWave.foreground};
   padding: 0.5rem 6rem;
-  border: 1px solid ${SynthWave.background};
+  border: 1px solid ${SynthWave.foreground};
   margin: 1rem 0;
   width: auto;
   height: 60vh;
@@ -14,15 +18,15 @@ export const Main = styled.div`
 
   :hover {
     transition: all 0.5s ease-out;
-    background: ${SynthWave.background};
-    color: ${SynthWave.foreground};
+    background: ${SynthWave.foreground};
+    color: ${SynthWave.background};
 
     box-shadow: 0 0 10px ${SynthWave.purple};
   }
 
   .description {
     display: none;
-    color: ${SynthWave.foreground};
+    color: ${SynthWave.background};
   }
 `;
 

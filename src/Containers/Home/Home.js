@@ -1,11 +1,13 @@
 import TypeIt from "typeit-react";
 
-import { App } from "./Home.style";
+import { App, Img } from "./Home.style";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { About } from "../About/About";
 import { Projects } from "../Projects/Projects";
-//import { Footer } from "../../Components/Footer/Footer";
+import { Footer } from "../../Components/Footer/Footer";
 import { Contact } from "../Contact/Contact";
+
+import codeman from "../../Assets/codemanmdf.png";
 
 function Home() {
   return (
@@ -22,6 +24,7 @@ function Home() {
             With 3+ years of experience. <br />
             Now Aviable for you.
           </TypeIt>
+          <Img src={codeman} alt="" />
         </header>
         <footer>
           <div className="sketch ps-3">Scroll Down X</div>
@@ -32,6 +35,7 @@ function Home() {
       <Projects />
       <br />
       <Contact />
+      <Footer />
     </>
   );
 }
