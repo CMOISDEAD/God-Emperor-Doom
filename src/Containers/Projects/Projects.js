@@ -6,13 +6,13 @@ export const Projects = () => {
   return (
     <>
       <Project className="text-center">
-        <h3 className="fs-4 text-white">Projects.</h3>
+        <h3 className="fs-4 text-white pt-3">Projects.</h3>
         <div className="container">
           <div className="row row-cols-1 row-cols-md-2 g-4 pb-2">
             <div className="col">
               <Card
                 img="https://fondosmil.com/fondo/5046.jpg"
-                title="Todo"
+                title="Todo."
                 text="Application to manage events and time."
                 repo="a"
               />
@@ -20,7 +20,7 @@ export const Projects = () => {
             <div className="col">
               <Card
                 img="https://fondosmil.com/fondo/5046.jpg"
-                title="LeagueAPI"
+                title="League API."
                 text="League of Legends data dashboard."
                 repo="b"
               />
@@ -28,7 +28,7 @@ export const Projects = () => {
             <div className="col">
               <Card
                 img="https://fondosmil.com/fondo/5046.jpg"
-                title="WriterForum"
+                title="Writer forum."
                 text="A blog for writers."
                 repo="c"
               />
@@ -36,7 +36,7 @@ export const Projects = () => {
             <div className="col">
               <Card
                 img="https://fondosmil.com/fondo/5046.jpg"
-                title="CountManager"
+                title="Count manager."
                 text="A Count manager for money and related shit."
                 repo="d"
               />
@@ -44,8 +44,8 @@ export const Projects = () => {
             <div className="col">
               <Card
                 img="https://fondosmil.com/fondo/5046.jpg"
-                title="HOME"
-                text="Theres no way like home."
+                title="Markdown editor."
+                text="Markdown editor with full javascript technology."
                 repo="e"
               />
             </div>

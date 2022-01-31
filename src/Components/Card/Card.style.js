@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SynthWave } from "../../Components/Colors/Colors";
+import { device } from "../../utils/breakpoints";
 
 export const A = styled.a`
   text-decoration: none;
@@ -21,7 +22,7 @@ export const Main = styled.div`
     background: ${SynthWave.foreground};
     color: ${SynthWave.background};
 
-    box-shadow: 0 0 10px ${SynthWave.purple};
+    box-shadow: 0 0 10px ${SynthWave.background};
   }
 
   .description {

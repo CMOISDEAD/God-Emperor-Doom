@@ -11,7 +11,8 @@ export const App = styled.div`
     justify-content: center;
   }
 
-  background: url(${backgroundImage}) center center fixed;
+  // background: url(${backgroundImage}) center center fixed;
+  background: ${SynthWave.background};
   background-size: cover;
   color: ${SynthWave.foreground};
 
@@ -89,7 +90,7 @@ export const App = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 50vw;
+  width: 40vw;
 
   @media ${device.mobileM} {
     display: none;

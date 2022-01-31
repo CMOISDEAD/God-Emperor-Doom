@@ -8,11 +8,21 @@ export const FooterBox = styled.div`
   -webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.75);
 
-  ul{
+  ul {
     list-style: none;
-    li{
-     color: ${SynthWave.foreground} 
+    li {
+      color: ${SynthWave.foreground};
+      a {
+        color: ${SynthWave.cyan};
+        text-decoration: none;
+        :hover {
+          color: ${SynthWave.red};
+        }
+      }
     }
   }
-}
+
+  .barcode {
+    font-size: 3.5rem;
+  }
 `;

@@ -8,6 +8,7 @@ export const Footer = () => {
           <div className="row">
             <div className="col">
               <ul>
+                <p className="text-center fs-6">Links</p>
                 <li>First</li>
                 <li>Second</li>
                 <li>Third</li>
@@ -15,12 +16,13 @@ export const Footer = () => {
             </div>
             <div className="col">
               <div className="trademark">
-                With love & coffe.
+                With ❤️ & coffe.
                 <div className="barcode">DROPDEAD</div>
               </div>
             </div>
             <div className="col">
               <ul>
+                <p className="text-center fs-6">Contact</p>
                 <li>
                   <a href="/lag">Email</a>
                 </li>

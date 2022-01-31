@@ -15,6 +15,7 @@ export const Contact = () => {
           description="Lorem Ipsum Dolorum."
           url="Linkedin.com"
         />
+        <p>-or-</p>
         <Card
           title="Instagram"
           background="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5579402.jpg&f=1&nofb=1"
@@ -23,6 +24,7 @@ export const Contact = () => {
           description="Lorem Ipsum Dolorum."
           url="Instagram.com"
         />
+        <p>-or-</p>
         <Card
           title="Twitter"
           background="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5579402.jpg&f=1&nofb=1"

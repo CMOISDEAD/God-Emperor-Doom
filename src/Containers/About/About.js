@@ -6,10 +6,10 @@ export const About = () => {
   return (
     <>
       <AboutBox className="container text-center mt-3 mb-3 pt-2">
-        <h3 className="fs-2">About Me.</h3>
+        <h3 className="fs-2">About me.</h3>
         <div className="row">
           <div className="col-md-7 col-sm-auto">
-            <p className="text-start fs-4 mt-2">Who I Am:</p>
+            <p className="text-start fs-4 mt-2">Who i am:</p>
             Amet nulla impedit expedita corrupti voluptates Quod alias officia
             perferendis odio recusandae! Veniam cum a animi amet delectus,
             repellat Molestiae aspernatur maxime assumenda mollitia similique
@@ -18,7 +18,7 @@ export const About = () => {
             Accusantium maxime illum suscipit optio rem tenetur, quo Non
             voluptates dolorem sed eos ut Sit fuga eius quasi blanditiis dolore?
             Itaque aliquam rerum aut!
-            <p className="text-start fs-4 mt-2">Main Skills:</p>
+            <p className="text-start fs-4 mt-2">Main skills:</p>
             <IconList className="text-center mt-2">
               <ul>
                 <li>
@@ -53,7 +53,7 @@ export const About = () => {
                 </li>
               </ul>
             </IconList>
-            <p className="text-start fs-4 mt-2">Extra Skills:</p>
+            <p className="text-start fs-4 mt-2">Extra skills:</p>
             <IconList className="text-center mt-2">
               <ul>
                 <li>
@@ -72,7 +72,7 @@ export const About = () => {
             </IconList>
           </div>
           <Picture className="col d-none d-md-block profile text-center">
-            Profile Pic.
+            DOOM.
           </Picture>
         </div>
       </AboutBox>

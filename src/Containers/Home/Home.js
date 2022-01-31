@@ -7,7 +7,7 @@ import { Projects } from "../Projects/Projects";
 import { Footer } from "../../Components/Footer/Footer";
 import { Contact } from "../Contact/Contact";
 
-import codeman from "../../Assets/codemanmdf.png";
+import amico from "../../Assets/Programming-pana.svg";
 
 function Home() {
   return (
@@ -24,7 +24,7 @@ function Home() {
             With 3+ years of experience. <br />
             Now Aviable for you.
           </TypeIt>
-          <Img src={codeman} alt="" />
+          <Img src={amico} alt="" />
         </header>
         <footer>
           <div className="sketch ps-3">Scroll Down X</div>
