@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SynthWave } from "../../Components/Colors/Colors";
-import { device } from "../../utils/breakpoints";
+// import { device } from "../../utils/breakpoints";
 
 export const A = styled.a`
   text-decoration: none;
