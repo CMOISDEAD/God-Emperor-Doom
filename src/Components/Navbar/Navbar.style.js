@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SynthWave } from "../../Components/Colors/Colors";
+// import { device } from "../../utils/breakpoints";
 
 export const Nav = styled.nav`
   display: flex;

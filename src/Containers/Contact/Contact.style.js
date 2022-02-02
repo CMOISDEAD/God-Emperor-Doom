@@ -23,6 +23,14 @@ export const CardBox = styled.div`
 `;
 
 export const Side = styled.div`
+  @media ${device.mobileM} {
+    writing-mode: horizontal-tb;
+  }
+
+  @media ${device.laptop} {
+    writing-mode: horizontal-tb;
+  }
+
   writing-mode: vertical-rl;
   color: ${SynthWave.background};
   font-size: 1.4rem;

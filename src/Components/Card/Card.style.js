@@ -7,14 +7,13 @@ export const A = styled.a`
 `;
 
 export const Main = styled.div`
-  perspective: 1000px;
   background: ${SynthWave.background};
   color: ${SynthWave.foreground};
   padding: 0.5rem 6rem;
   border: 1px solid ${SynthWave.foreground};
   margin: 1rem 0;
   width: auto;
-  height: 60vh;
+  height: 65vh;
   transition: all 0.5s ease-out;
 
   :hover {
