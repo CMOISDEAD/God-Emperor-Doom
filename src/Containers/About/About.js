@@ -1,4 +1,19 @@
-import { Icons } from "../../Components/Icons/Icons";
+import {
+  DiHtml5,
+  DiCss3,
+  DiJavascript,
+  DiSass,
+  DiNodejs,
+  DiNpm,
+  DiReact,
+  DiGit,
+  DiGithub,
+  DiLinux,
+  DiRust,
+  DiPython,
+  DiDatabase,
+  DiMysql,
+} from "react-icons/di";
 
 import { AboutBox, Picture, IconList } from "./About.style";
 
@@ -22,34 +37,34 @@ export const About = () => {
             <IconList className="text-center mt-2">
               <ul>
                 <li>
-                  <Icons icon="fab fa-html5" name="html5" />
+                  <DiHtml5 />
                 </li>
                 <li>
-                  <Icons icon="fab fa-css3-alt" name="css3" />
+                  <DiCss3 />
                 </li>
                 <li>
-                  <Icons icon="fab fa-sass" name="sass" />
+                  <DiJavascript />
                 </li>
                 <li>
-                  <Icons icon="fab fa-js" name="javascript" />
+                  <DiSass />
                 </li>
                 <li>
-                  <Icons icon="fab fa-react" name="react" />
+                  <DiNodejs />
                 </li>
                 <li>
-                  <Icons icon="fab fa-node-js" name="nodejs" />
+                  <DiNpm />
                 </li>
                 <li>
-                  <Icons icon="fab fa-git-alt" name="git" />
+                  <DiReact />
                 </li>
                 <li>
-                  <Icons icon="fab fa-github-alt" name="github" />
+                  <DiGit />
                 </li>
                 <li>
-                  <Icons icon="fab fa-linux" name="linux" />
+                  <DiGithub />
                 </li>
                 <li>
-                  <Icons icon="fab fa-npm" name="npm" />
+                  <DiLinux />
                 </li>
               </ul>
             </IconList>
@@ -57,16 +72,16 @@ export const About = () => {
             <IconList className="text-center mt-2">
               <ul>
                 <li>
-                  <a href="/">Rust</a>
+                  <DiRust />
                 </li>
                 <li>
-                  <a href="/">Python</a>
+                  <DiPython />
                 </li>
                 <li>
-                  <a href="/">Databases</a>
+                  <DiDatabase />
                 </li>
                 <li>
-                  <a href="/">SQL</a>
+                  <DiMysql />
                 </li>
               </ul>
             </IconList>

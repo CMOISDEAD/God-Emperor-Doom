@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../V2/face.jpg";
+import image from "../.Home/face.jpg";
 import { SynthWave } from "../../Components/Colors/Colors";
 import { device } from "../../utils/breakpoints";
 
@@ -26,6 +26,7 @@ export const Picture = styled.div`
 export const IconList = styled.div`
   ul {
     li {
+      font-size: 1.8rem;
       display: inline;
       padding: 0 1vw;
       a {

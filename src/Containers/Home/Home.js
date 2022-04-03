@@ -9,6 +9,7 @@ import { Contact } from "../Contact/Contact";
 
 import amico from "../../Assets/Programming-pana.svg";
 
+// TODO: algo.
 function Home() {
   return (
     <>
