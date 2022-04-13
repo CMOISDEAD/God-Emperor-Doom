@@ -7,7 +7,7 @@ const backgroundImage =
 export const Project = styled.div`
   /* background: url(${backgroundImage}) center center fixed;
    * background-position: cover; */
-  background: ${SynthWave.background};
+  /* background: ${SynthWave.background}; */
   h3 {
     color: ${SynthWave.foreground} !important;
   }

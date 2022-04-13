@@ -12,7 +12,6 @@ export const App = styled.div`
   }
 
   // background: url(${backgroundImage}) center center fixed;
-  background: ${SynthWave.background};
   background-size: cover;
   color: ${SynthWave.foreground};
 
@@ -86,17 +85,5 @@ export const App = styled.div`
         0 0 60px ${SynthWave.pink}, 0 0 70px ${SynthWave.pink},
         0 0 80px ${SynthWave.pink};
     }
-  }
-`;
-
-export const Img = styled.img`
-  width: 40vw;
-
-  @media ${device.mobileM} {
-    display: none;
-  }
-
-  @media ${device.laptop} {
-    display: block;
   }
 `;
