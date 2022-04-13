@@ -1,10 +1,10 @@
 import { A, Main, Letter } from "./Card.style";
 
-export const Card = ({ title, background, letter, year, description, url }) => {
+export const Card = ({ title, letter, year, description, url }) => {
   return (
     <>
       <A href={url}>
-        <Main background={background}>
+        <Main>
           <Letter className="sketch">{letter}</Letter>
           <div className="text-center">
             <div className="date">{year}</div>
