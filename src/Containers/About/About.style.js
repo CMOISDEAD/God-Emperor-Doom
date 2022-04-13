@@ -25,16 +25,33 @@ export const Picture = styled.div`
 
 export const IconList = styled.div`
   ul {
+    list-style: none;
     li {
       font-size: 1.8rem;
       display: inline;
       padding: 0 1vw;
-      a {
+      span {
+        font-size: 0.9rem;
         text-weight: normal !important;
         color: ${SynthWave.background};
         text-decoration: none;
       }
     }
-    list-style: none;
+  }
+
+  .icon {
+    display: inline;
+    span {
+      display: none;
+    }
+    :hover {
+      span {
+        display: inline;
+        position: absolute;
+        margin: 4.3vh -1.6vw;
+        background: ${SynthWave.background};
+        color: ${SynthWave.foreground};
+      }
+    }
   }
 `;

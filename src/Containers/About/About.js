@@ -38,34 +38,64 @@ export const About = () => {
               <IconList className="text-center mt-2">
                 <ul>
                   <li>
-                    <DiHtml5 />
+                    <div className="icon text-center">
+                      <DiHtml5 />
+                      <span>Html5</span>
+                    </div>
                   </li>
                   <li>
-                    <DiCss3 />
+                    <div class="icon">
+                      <DiCss3 />
+                      <span>Css3</span>
+                    </div>
                   </li>
                   <li>
-                    <DiJavascript />
+                    <div class="icon">
+                      <DiJavascript />
+                      <span>Javascript</span>
+                    </div>
                   </li>
                   <li>
-                    <DiSass />
+                    <div class="icon">
+                      <DiSass />
+                      <span>Sass</span>
+                    </div>
                   </li>
                   <li>
-                    <DiNodejs />
+                    <div class="icon">
+                      <DiNodejs />
+                      <span>NodeJs</span>
+                    </div>
                   </li>
                   <li>
-                    <DiNpm />
+                    <div class="icon">
+                      <DiNpm />
+                      <span>Npm</span>
+                    </div>
                   </li>
                   <li>
-                    <DiReact />
+                    <div class="icon">
+                      <DiReact />
+                      <span>css</span>
+                    </div>
                   </li>
                   <li>
-                    <DiGit />
+                    <div class="icon">
+                      <DiGit />
+                      <span>Git</span>
+                    </div>
                   </li>
                   <li>
-                    <DiGithub />
+                    <div class="icon">
+                      <DiGithub />
+                      <span>GitHub</span>
+                    </div>
                   </li>
                   <li>
-                    <DiLinux />
+                    <div class="icon">
+                      <DiLinux />
+                      <span>Linux</span>
+                    </div>
                   </li>
                 </ul>
               </IconList>
@@ -73,16 +103,28 @@ export const About = () => {
               <IconList className="text-center mt-2">
                 <ul>
                   <li>
-                    <DiRust />
+                    <div class="icon">
+                      <DiRust />
+                      <span>Rust</span>
+                    </div>
                   </li>
                   <li>
-                    <DiPython />
+                    <div class="icon">
+                      <DiPython />
+                      <span>Python</span>
+                    </div>
                   </li>
                   <li>
-                    <DiDatabase />
+                    <div class="icon">
+                      <DiDatabase />
+                      <span>Databases</span>
+                    </div>
                   </li>
                   <li>
-                    <DiMysql />
+                    <div class="icon">
+                      <DiMysql />
+                      <span>Mysql</span>
+                    </div>
                   </li>
                 </ul>
               </IconList>

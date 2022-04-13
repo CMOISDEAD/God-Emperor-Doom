@@ -3,7 +3,7 @@ import Particles from "react-tsparticles";
 
 import { Img } from "./Header.style";
 
-import amico from "../../Assets/Programming-pana.svg";
+import amico from "../../Assets/retropc.png";
 import "./Header.css";
 
 export const Header = () => {
