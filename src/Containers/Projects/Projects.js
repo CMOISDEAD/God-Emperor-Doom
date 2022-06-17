@@ -2,6 +2,9 @@ import { Card } from "../../Components/Cards/Card";
 
 import { Project } from "./Projects.style";
 
+import Markdown from "../../Assets/markdown.png";
+import Startpage from "../../Assets/Startpage.png";
+
 export const Projects = () => {
   return (
     <>
@@ -11,10 +14,10 @@ export const Projects = () => {
           <div className="row row-cols-1 row-cols-md-2 g-4 pb-2">
             <div className="col">
               <Card
-                img="https://fondosmil.com/fondo/5046.jpg"
-                title="Todo."
-                text="Application to manage events and time."
-                repo="a"
+                img={Markdown}
+                title="Markdown Editor"
+                text="A markdown editor desktop application"
+                repo="Operation-Doomsday-Editor"
               />
             </div>
             <div className="col">
@@ -22,31 +25,31 @@ export const Projects = () => {
                 img="https://fondosmil.com/fondo/5046.jpg"
                 title="League API."
                 text="League of Legends data dashboard."
-                repo="b"
+                repo="DROPSTATS"
               />
             </div>
             <div className="col">
               <Card
                 img="https://fondosmil.com/fondo/5046.jpg"
-                title="Writer forum."
-                text="A blog for writers."
-                repo="c"
+                title="Landing page."
+                text="Landing page written in vue"
+                repo="Doomsday-webiste"
               />
             </div>
             <div className="col">
               <Card
-                img="https://fondosmil.com/fondo/5046.jpg"
+                img={Startpage}
                 title="Dynamic starpage"
-                text="A Count manager for money and related shit."
-                repo="d"
+                text="A fully customizable startpage"
+                repo="startpage"
               />
             </div>
             <div className="col">
               <Card
                 img="https://fondosmil.com/fondo/5046.jpg"
-                title="Markdown editor."
-                text="Markdown editor with full javascript technology."
-                repo="e"
+                title="Blog"
+                text="Blog app written in next.js"
+                repo="doom-blog"
               />
             </div>
           </div>
