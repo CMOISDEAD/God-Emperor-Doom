@@ -2,8 +2,10 @@ import { Card } from "../../Components/Cards/Card";
 
 import { Project } from "./Projects.style";
 
-import Markdown from "../../Assets/markdown.png";
+import Landing from "../../Assets/markdown.png";
 import Startpage from "../../Assets/Startpage.png";
+import CodeEditor from "../../Assets/codeeditor.png";
+import LolApi from "../../Assets/Lol.jpg";
 
 export const Projects = () => {
   return (
@@ -14,7 +16,7 @@ export const Projects = () => {
           <div className="row row-cols-1 row-cols-md-2 g-4 pb-2">
             <div className="col">
               <Card
-                img={Markdown}
+                img={CodeEditor}
                 title="Markdown Editor"
                 text="A markdown editor desktop application"
                 repo="Operation-Doomsday-Editor"
@@ -22,7 +24,7 @@ export const Projects = () => {
             </div>
             <div className="col">
               <Card
-                img="https://fondosmil.com/fondo/5046.jpg"
+                img={LolApi}
                 title="League API."
                 text="League of Legends data dashboard."
                 repo="DROPSTATS"
@@ -30,7 +32,7 @@ export const Projects = () => {
             </div>
             <div className="col">
               <Card
-                img="https://fondosmil.com/fondo/5046.jpg"
+                img={Landing}
                 title="Landing page."
                 text="Landing page written in vue"
                 repo="Doomsday-webiste"
