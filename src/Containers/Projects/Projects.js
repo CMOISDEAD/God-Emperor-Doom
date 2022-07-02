@@ -6,6 +6,7 @@ import Landing from "../../Assets/markdown.png";
 import Startpage from "../../Assets/Startpage.png";
 import CodeEditor from "../../Assets/codeeditor.png";
 import LolApi from "../../Assets/Lol.jpg";
+import Blog from "../../Assets/doom-blog.png";
 
 export const Projects = () => {
   return (
@@ -48,7 +49,7 @@ export const Projects = () => {
             </div>
             <div className="col">
               <Card
-                img="https://fondosmil.com/fondo/5046.jpg"
+                img={Blog}
                 title="Blog"
                 text="Blog app written in next.js"
                 repo="doom-blog"
