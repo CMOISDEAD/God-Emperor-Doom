@@ -1,3 +1,4 @@
+import { BsGithub } from "react-icons/bs";
 import { A, CardBox } from "./Card.style";
 
 export const Card = ({ img, title, text, repo }) => {
@@ -17,7 +18,7 @@ export const Card = ({ img, title, text, repo }) => {
           <div className="card-footer">
             <small className="text-muted">
               <A href={repo}>
-                <i className="fab fa-github-alt"></i>
+                <BsGithub />
               </A>
             </small>
           </div>

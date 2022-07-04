@@ -15,8 +15,6 @@ export const Nav = styled.nav`
 export const Brand = styled.div`
   font-family: sketch, san-serif !important;
   font-size: 5rem;
-  span {
-  }
 `;
 
 export const Social = styled.div`
@@ -26,20 +24,16 @@ export const Social = styled.div`
     color: ${SynthWave.foreground};
     transition: all .5s;
     text-decoration: none;
-
-    i{
-      span{
-        display: none;
-        font-style: normal;
-      }
-      :hover{
-        animation: rainbow .2s linear infinite;
-        span{
-          display: inline;
-        }
-      }
+    
+    span{
+      display: none;
+      font-style: normal;
     }
 
+    .icon-social:hover{
+      animation: rainbow .2s linear infinite;
+    }
+   
     :hover{
       color: ${SynthWave.foreground};
     }

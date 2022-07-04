@@ -1,14 +1,14 @@
-config = {
+export const config = {
   background: {
     color: {
-      value: "#0d47a1",
+      value: "#1d2021",
     },
   },
   fpsLimit: 60,
   interactivity: {
     events: {
       onClick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       onHover: {
@@ -35,10 +35,10 @@ config = {
   },
   particles: {
     color: {
-      value: "#ffffff",
+      value: "#fbf1c7",
     },
     links: {
-      color: "#ffffff",
+      color: "#fbf1c7",
       distance: 150,
       enable: true,
       opacity: 0.5,
@@ -60,7 +60,7 @@ config = {
         enable: true,
         area: 800,
       },
-      value: 80,
+      value: 30,
     },
     opacity: {
       value: 0.5,

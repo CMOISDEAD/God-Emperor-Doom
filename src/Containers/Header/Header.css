@@ -1,3 +1,18 @@
 #particles-js {
+  position: absolute;
   z-index: -2;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  margin-bottom: -4.2vh;
+}
+
+.main-text {
+  font-size: calc(10px + 3vmin);
 }

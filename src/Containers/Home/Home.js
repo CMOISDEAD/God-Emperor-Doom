@@ -4,11 +4,8 @@ import { Navbar } from "../../Components/Navbar/Navbar";
 import { About } from "../About/About";
 import { Projects } from "../Projects/Projects";
 import { Footer } from "../../Components/Footer/Footer";
-import { Contact } from "../Contact/Contact";
+// import { Contact } from "../Contact/Contact";
 
-import "./Home.css";
-
-// TODO: algo.
 function Home() {
   return (
     <>
@@ -23,7 +20,7 @@ function Home() {
       <About />
       <Projects />
       <br />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

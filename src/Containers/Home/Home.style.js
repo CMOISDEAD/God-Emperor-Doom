@@ -2,33 +2,8 @@ import styled from "styled-components";
 import { SynthWave } from "../../Components/Colors/Colors";
 import { device } from "../../utils/breakpoints";
 
-const backgroundImage =
-  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvg%2Fwallhaven-vglx93.png&f=1&nofb=1";
-
 export const App = styled.div`
-  @media ${device.mobileM} {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  // background: url(${backgroundImage}) center center fixed;
-  background-size: cover;
   color: ${SynthWave.foreground};
-
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-
-  .App-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-size: calc(10px + 2vmin);
-    margin-bottom: -4.2vh;
-  }
 
   .primary-text {
     font-size: 5rem;
@@ -39,13 +14,6 @@ export const App = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .main-text {
-    font-size: calc(10px + 3vmin);
-    .fullstack {
-      // animation: glow 1s linear infinite alternate;
-    }
   }
 
   footer {
@@ -85,5 +53,10 @@ export const App = styled.div`
         0 0 60px ${SynthWave.pink}, 0 0 70px ${SynthWave.pink},
         0 0 80px ${SynthWave.pink};
     }
+  }
+
+  @media ${device.mobileM} {
+    flex-direction: column;
+    justify-content: center;
   }
 `;

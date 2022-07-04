@@ -15,14 +15,36 @@ import {
   DiMysql,
 } from "react-icons/di";
 
-import { AboutBox, Picture, IconList } from "./About.style";
+import { Chart } from "../../Components/Chart/Chart";
+import { Icon } from "../../Components/Icon/Icon";
+import { AboutBox, IconList } from "./About.style";
+
+const topIcons = [
+  { icon: <DiHtml5 />, name: "html" },
+  { icon: <DiCss3 />, name: "css" },
+  { icon: <DiJavascript />, name: "javascript" },
+  { icon: <DiSass />, name: "sass" },
+  { icon: <DiNodejs />, name: "nodejs" },
+  { icon: <DiNpm />, name: "npm" },
+  { icon: <DiReact />, name: "react" },
+  { icon: <DiGit />, name: "git" },
+  { icon: <DiGithub />, name: "github" },
+  { icon: <DiLinux />, name: "linux" },
+];
+
+const bottomIcons = [
+  { icon: <DiRust />, name: "rust" },
+  { icon: <DiPython />, name: "python" },
+  { icon: <DiDatabase />, name: "databases" },
+  { icon: <DiMysql />, name: "mysql" },
+];
 
 export const About = () => {
   return (
     <>
       <div className="bg-light">
-        <AboutBox className="container text-center mt-3 mb-3 pt-2">
-          <h3 className="fs-2">About me.</h3>
+        <AboutBox className="container text-start mt-3 mb-3 pt-2">
+          <h3 className="fs-2 text-center">About me.</h3>
           <div className="row">
             <div className="col-md-7 col-sm-auto">
               <p className="text-start fs-4 mt-2">Who i am:</p>
@@ -37,101 +59,31 @@ export const About = () => {
               <p className="text-start fs-4 mt-2">Main skills:</p>
               <IconList className="text-center mt-2">
                 <ul>
-                  <li>
-                    <div className="icon text-center">
-                      <DiHtml5 />
-                      <span>Html5</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiCss3 />
-                      <span>Css3</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiJavascript />
-                      <span>Javascript</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiSass />
-                      <span>Sass</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiNodejs />
-                      <span>NodeJs</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiNpm />
-                      <span>Npm</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiReact />
-                      <span>css</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiGit />
-                      <span>Git</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiGithub />
-                      <span>GitHub</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiLinux />
-                      <span>Linux</span>
-                    </div>
-                  </li>
+                  {topIcons.map(({ icon, name }, i) => {
+                    return (
+                      <li key={i}>
+                        <Icon icon={icon} name={name} />
+                      </li>
+                    );
+                  })}
                 </ul>
               </IconList>
               <p className="text-start fs-4 mt-2">Extra skills:</p>
               <IconList className="text-center mt-2">
                 <ul>
-                  <li>
-                    <div class="icon">
-                      <DiRust />
-                      <span>Rust</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiPython />
-                      <span>Python</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiDatabase />
-                      <span>Databases</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <DiMysql />
-                      <span>Mysql</span>
-                    </div>
-                  </li>
+                  {bottomIcons.map(({ icon, name }, key) => {
+                    return (
+                      <li>
+                        <Icon icon={icon} name={name} key={key} />
+                      </li>
+                    );
+                  })}
                 </ul>
               </IconList>
             </div>
-            <Picture className="col d-none d-md-block profile text-center">
-              DOOM.
-            </Picture>
+            <div className="col text-start mb-4">
+              <Chart />
+            </div>
           </div>
         </AboutBox>
       </div>
