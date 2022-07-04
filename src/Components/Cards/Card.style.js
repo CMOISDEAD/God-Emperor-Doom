@@ -4,6 +4,12 @@ import { SynthWave } from "../Colors/Colors";
 export const CardBox = styled.div`
   background: ${SynthWave.white};
   color: ${SynthWave.background};
+  .card-footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    justify-items: center;
+  }
 `;
 
 export const A = styled.a`

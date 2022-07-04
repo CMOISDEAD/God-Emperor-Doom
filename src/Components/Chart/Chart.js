@@ -1,25 +1,5 @@
 import { useState } from "react";
 
-const Progress = ({ value, title, key }) => {
-  return (
-    <>
-      <p className="text-capitalize font-weight-bold mt-2">{title}</p>
-      <div className="progress" key={key}>
-        <div
-          className="progress-bar"
-          role="progressbar"
-          style={{ width: value, background: "#448386", color: "#fbf1c7" }}
-          aria-valuenow="55"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          {value}
-        </div>
-      </div>
-    </>
-  );
-};
-
 const frontend = [
   { title: "react.js", value: "90%" },
   { title: "vue.js", value: "60%" },
@@ -43,6 +23,26 @@ const general = [
   { title: "terminal", value: "95%" },
   { title: "haskell", value: "10%" },
 ];
+
+const Progress = ({ value, title }) => {
+  return (
+    <>
+      <p className="text-capitalize font-weight-bold mt-2">{title}</p>
+      <div className="progress">
+        <div
+          className="progress-bar"
+          role="progressbar"
+          style={{ width: value, background: "#448386", color: "#fbf1c7" }}
+          aria-valuenow="55"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          {value}
+        </div>
+      </div>
+    </>
+  );
+};
 
 export const Chart = () => {
   const [view, setView] = useState("Frontend");
@@ -70,26 +70,26 @@ export const Chart = () => {
 
   return (
     <>
-      <h3 className="text-start fs-4 mt-2">Skill chart:</h3>
       <ul className="nav nav-tabs">
         {["Frontend", "Backend", "General"].map((item, i) => {
           return (
             <li className="nav-item" key={i}>
-              <a
-                className={`nav-link ${item == view ? "active" : ""}`}
-                aria-current="page"
+              <button
+                className={`nav-link ${item === view ? "active" : ""}`}
                 onClick={handleClick}
                 name={item.toLowerCase()}
               >
                 {item}
-              </a>
+              </button>
             </li>
           );
         })}
       </ul>
-      {content.map(({ title, value }, i) => {
-        return <Progress title={title} value={value} key={i} />;
-      })}
+      <div>
+        {content.map(({ title, value }, i) => {
+          return <Progress title={title} value={value} key={i} />;
+        })}
+      </div>
     </>
   );
 };

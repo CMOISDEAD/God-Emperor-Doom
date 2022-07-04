@@ -3,7 +3,7 @@ import { A, Main, Letter } from "./Card.style";
 export const Card = ({ title, letter, year, description, url }) => {
   return (
     <>
-      <A href={url}>
+      <A href={`https://github.com/CMOISDEAD/${url}`}>
         <Main>
           <Letter className="sketch">{letter}</Letter>
           <div className="text-center">

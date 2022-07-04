@@ -43,11 +43,11 @@ export const About = () => {
   return (
     <>
       <div className="bg-light">
-        <AboutBox className="container text-start mt-3 mb-3 pt-2">
+        <AboutBox className="container text-start my-4 pt-2">
           <h3 className="fs-2 text-center">About me.</h3>
           <div className="row">
             <div className="col-md-7 col-sm-auto">
-              <p className="text-start fs-4 mt-2">Who i am:</p>
+              <p className="text-start fs-4 mt-2">Who i am</p>
               Amet nulla impedit expedita corrupti voluptates Quod alias officia
               perferendis odio recusandae! Veniam cum a animi amet delectus,
               repellat Molestiae aspernatur maxime assumenda mollitia similique
@@ -56,7 +56,7 @@ export const About = () => {
               Accusantium maxime illum suscipit optio rem tenetur, quo Non
               voluptates dolorem sed eos ut Sit fuga eius quasi blanditiis
               dolore? Itaque aliquam rerum aut!
-              <p className="text-start fs-4 mt-2">Main skills:</p>
+              <p className="text-start fs-4 mt-2">Main skills</p>
               <IconList className="text-center mt-2">
                 <ul>
                   {topIcons.map(({ icon, name }, i) => {
@@ -68,13 +68,13 @@ export const About = () => {
                   })}
                 </ul>
               </IconList>
-              <p className="text-start fs-4 mt-2">Extra skills:</p>
+              <p className="text-start fs-4 mt-2">Extra skills</p>
               <IconList className="text-center mt-2">
                 <ul>
-                  {bottomIcons.map(({ icon, name }, key) => {
+                  {bottomIcons.map(({ icon, name }, i) => {
                     return (
-                      <li>
-                        <Icon icon={icon} name={name} key={key} />
+                      <li key={i}>
+                        <Icon icon={icon} name={name} />
                       </li>
                     );
                   })}

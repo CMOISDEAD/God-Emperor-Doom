@@ -1,3 +1,12 @@
+import { DiReact, DiBootstrap } from "react-icons/di";
+import {
+  SiElectron,
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+} from "react-icons/si";
+import { FaVuejs } from "react-icons/fa";
+
 import { Card } from "../../Components/Cards/Card";
 
 import { Project } from "./Projects.style";
@@ -21,6 +30,12 @@ export const Projects = () => {
                 title="Markdown Editor"
                 text="A markdown editor desktop application"
                 repo="Operation-Doomsday-Editor"
+                icons={[
+                  <DiReact />,
+                  <SiElectron />,
+                  <SiTypescript />,
+                  <DiBootstrap />,
+                ]}
               />
             </div>
             <div className="col">
@@ -29,6 +44,7 @@ export const Projects = () => {
                 title="League API."
                 text="League of Legends data dashboard."
                 repo="DROPSTATS"
+                icons={[<DiReact />, <DiBootstrap />]}
               />
             </div>
             <div className="col">
@@ -37,6 +53,7 @@ export const Projects = () => {
                 title="Landing page."
                 text="Landing page written in vue"
                 repo="Doomsday-webiste"
+                icons={[<FaVuejs />, <SiTailwindcss />]}
               />
             </div>
             <div className="col">
@@ -45,6 +62,7 @@ export const Projects = () => {
                 title="Dynamic starpage"
                 text="A fully customizable startpage"
                 repo="startpage"
+                icons={[<DiReact />, <DiBootstrap />]}
               />
             </div>
             <div className="col">
@@ -53,6 +71,7 @@ export const Projects = () => {
                 title="Blog"
                 text="Blog app written in next.js"
                 repo="doom-blog"
+                icons={[<SiNextdotjs />, <DiReact />, <SiTailwindcss />]}
               />
             </div>
           </div>

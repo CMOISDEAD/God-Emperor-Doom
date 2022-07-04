@@ -6,13 +6,14 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   position: absolute;
   margin-top: -4vh;
   padding: 0.5rem;
 `;
 
 export const Brand = styled.div`
+  text-align: center;
   font-family: sketch, san-serif !important;
   font-size: 5rem;
 `;

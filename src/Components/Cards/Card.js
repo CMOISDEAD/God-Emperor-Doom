@@ -1,7 +1,7 @@
 import { BsGithub } from "react-icons/bs";
 import { A, CardBox } from "./Card.style";
 
-export const Card = ({ img, title, text, repo }) => {
+export const Card = ({ img, title, text, repo, icons }) => {
   return (
     <>
       <CardBox className="card h-100">
@@ -17,9 +17,18 @@ export const Card = ({ img, title, text, repo }) => {
           </div>
           <div className="card-footer">
             <small className="text-muted">
-              <A href={repo}>
+              <A href={`https://github.com/CMOISDEAD/${repo}`}>
                 <BsGithub />
               </A>
+            </small>
+            <small className="text-muted">
+              {icons.map((icon, i) => {
+                return (
+                  <span className="px-2" key={i}>
+                    {icon}
+                  </span>
+                );
+              })}
             </small>
           </div>
         </div>

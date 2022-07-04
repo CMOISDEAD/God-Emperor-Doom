@@ -9,17 +9,17 @@ export const Navbar = () => {
         DD<span className="sketch">X</span>
       </Brand>
       <Social>
-        <a href="https://twitter.com" target="_blank">
+        <a href="https://twitter.com" target="_blank" rel="noreferrer">
           <FaTwitter className="icon-social" />
           <span> twitter</span>
           <br />
         </a>
-        <a href="https://youtube.com" target="_blank">
+        <a href="https://youtube.com" target="_blank" rel="noreferrer">
           <FaYoutube className="icon-social" />
           <span> youtube</span>
           <br />
         </a>
-        <a href="https://linkedin.com" target="_blank">
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
           <FaLinkedinIn className="icon-social" />
           <span> Facebook</span>
           <br />
